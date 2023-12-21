@@ -1,0 +1,84 @@
+:root{
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(275, 100%, 97%);
+    --clr-primary-200: hsl(292, 16%, 49%);
+    --clr-primary-600: hsl(292, 42%, 14%);
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+*{
+    font-family: myFirstFont;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--clr-primary-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    width: 20rem;
+    margin-top: 9rem;
+    border-radius: 8px;
+
+}
+#Hero_mob{
+    position: absolute;
+    width: fit-content;
+    z-index: 1;
+}
+#accordian{
+    padding: 1rem 1.5rem;
+}
+#accordian li{
+    list-style: none;
+    word-spacing: 0px;
+}
+#accordian li p{
+   
+    font-weight: 600;
+    width: 14rem;
+    cursor: pointer;
+    padding: 1rem 0rem;
+    
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#accordian .content{
+    padding-bottom: 0.5rem;
+    line-height: 1.23rem;
+    color: var(--clr-primary-200);
+    /* max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s; */
+}
+#accordian .content p{
+    width: 100%;
+    font-size: 0.87rem;
+    font-weight: 500;
+}
+#heading{
+    margin-left: 17px;
+    display: flex;
+}
+#heading h1{
+    margin-left: 17px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+}
+#heading svg{
+    height: 38%;
+    margin-top: 30px;
+}
