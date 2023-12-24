@@ -37,6 +37,7 @@ body{
 }
 #accordian{
     padding: 1rem 1.5rem;
+    padding-top: 0;
 }
 #accordian li{
     list-style: none;
@@ -69,19 +70,19 @@ body{
     font-size: 0.87rem;
     font-weight: 500;
 }
-#heading{
+#Heading{
     margin-left: 17px;
     display: flex;
 }
-#heading h1{
+#Heading h1{
     margin-left: 17px;
     display: flex;
     align-self: center;
     margin-top: 15px;
 }
-#heading svg{
-    height: 38%;
-    margin-top: 30px;
+#Heading svg{
+    height: 1.6em;
+    margin-top: 22px;
 }
 hr{
     border: 0.5px solid rgba(140, 105, 145, 0.115);
