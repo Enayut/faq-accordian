@@ -32,7 +32,8 @@ body{
 }
 #Hero_mob{
     position: absolute;
-    width: fit-content;
+    object-fit: cover;
+    width: 100%;
     z-index: 1;
 }
 #accordian{
@@ -86,4 +87,37 @@ body{
 }
 hr{
     border: 0.5px solid rgba(140, 105, 145, 0.115);
+}
+
+@media (min-width: 550px){
+    #Hero_mob{
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+    }
+    .container{
+        background-color: var(--clr-white);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        width: 32rem;
+        margin-top: 9rem;
+        border-radius: 8px;
+    
+    }
+    #accordian li p{
+        font-weight: 600;
+        width: 30rem;
+        padding: 1rem 0rem;
+    }
+    #Heading h1{
+        font-size: 3rem;
+        margin: 0.5em;
+    }
+    #Heading svg{
+        height: 2.3em;
+        margin-top: 26px;
+        margin: 0.5;
+    }
 }

@@ -90,7 +90,7 @@
         ele.nextElementSibling.style.display = "none"
         ele.lastElementChild.setAttribute("src", "/assets/images/icon-plus.svg");      }
     }
-    const img = document.getElementById("Hero_mob")
+    let img = document.getElementById("Hero_mob")
     window.addEventListener('load', () => {
       changeImg();
     });
@@ -98,11 +98,12 @@
         changeImg();
     });
     function changeImg(){
-      const width = window.innerWidth
-      if (screenWidth >= 375) {
-          img.setAttribute(src,"/assets/images/background-pattern-desktop.svg");
+      let width = window.innerWidth
+      console.log(width)
+      if (width > 700) {
+          img.setAttribute("src","/assets/images/background-pattern-desktop.svg");
       } else {
-          img.setAttribute(src,"/assets/images/background-pattern-mobile.svg");
+          img.setAttribute("src","/assets/images/background-pattern-mobile.svg");
       }
     }
   </script>
